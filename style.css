@@ -1,0 +1,290 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    margin: auto;
+    width: 100%;
+    max-width: 1024px;
+    padding: 0 20px;
+}
+
+.content {
+    background-color: white;
+    margin-top: 20px;
+    box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.resume-first-section,
+.resume-second-section {
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.resume-first-section-contact {
+    width: 100%;
+    max-width: 360px;
+    background-color: #f5d7d7;
+}
+
+.resume-first-section-contact {
+    padding: 24px;
+}
+
+.resume-first-section-contact h1 {
+    position: relative;
+    width: 50px;
+
+}
+
+.resume-first-section-contact h1::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: black;
+    position: absolute;
+    bottom: -7px;
+    right: 0;
+}
+
+.contact-boxes {
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+
+}
+
+.contact-box {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+
+}
+
+.contact-box div {
+    width: 30px;
+    height: 30px;
+    background-color: white;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.contact-box a {
+    color: black;
+
+}
+
+.resume-first-section-profile,
+.resume-second-section-workHistory-languages {
+    width: 100%;
+    background-color: #fdefef;
+
+}
+
+.resume-first-section-profile-box {
+    padding: 24px;
+    margin-top: 45px;
+
+}
+
+.resume-second-section-education-skills {
+    width: 100%;
+    max-width: 360px;
+    background-color: #fdefef;
+
+}
+
+.resume-second-section-workHistory-languages {
+    width: 100%;
+    background-color: white;
+
+}
+
+.resume-second-section-education-skills-boxes,
+.resume-second-section-workHistory-languages-boxes {
+    padding: 24px;
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+
+
+}
+
+.resume-second-section-education-skills-boxes ul,
+.resume-second-section-workHistory-languages-boxes div > ul {
+    margin-top: 20px;
+    padding: 0 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.resume-second-section-education {
+    margin-top: 25px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.resume-second-section-education h3,
+.resume-second-section-workHistory-languages-boxes div h3 {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.resume-second-section-education span,
+.resume-second-section-workHistory-languages-boxes div div span {
+    font-size: 14px;
+    color: #7a7a7a;
+}
+
+.resume-second-section-education p {
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.resume-second-section-workHistory-languages-boxes div {
+    margin-top: 20px;
+}
+
+.resume-second-section-workHistory-languages-boxes .skills {
+    margin-top: 15px;
+    display: block;
+    font-size: 16px;
+    font-weight: 700;
+
+}
+
+.resume-second-section-workHistory-languages-boxes div ul li:last-child {
+    list-style: none;
+
+}
+
+.resume-second-section-workHistory-languages-boxes div ul li ul {
+    list-style: circle;
+    padding: 0 0 0 40px;
+    margin-top: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+}
+
+.resume-second-section-workHistory-languages-boxes .workHistory-skills li:last-child,
+.resume-second-section-workHistory-languages-boxes .language li:last-child {
+    list-style: circle;
+}
+
+.resume-second-section-workHistory-languages-boxes .language li:last-child {
+    list-style: disc;
+}
+
+.resume-first-section-profile-box p {
+    margin-top: 20px;
+}
+
+@media only screen and (max-width: 992px) {
+    .resume-first-section-contact h1 {
+        font-size: 25px;
+        width: 35px;
+    }
+
+    .resume-first-section-profile-box h2,
+    .resume-second-section-education-skills-boxes h2,
+    .resume-second-section-workHistory-languages-boxes h2 {
+        font-size: 20px;
+    }
+
+    .resume-first-section-profile-box p,
+    .contact-boxes,
+    .resume-second-section-education-skills-boxes ul,
+    .resume-second-section-workHistory-languages-boxes div ul {
+        font-size: 14px;
+    }
+
+    .resume-second-section-workHistory-languages-boxes div ul li ul {
+
+        padding: 0 0 0 30px;
+
+
+    }
+
+
+}
+
+@media only screen and (max-width: 768px) {
+    .resume-first-section, .resume-second-section {
+        flex-direction: column;
+    }
+
+    .resume-first-section-contact,
+    .resume-second-section-education-skills {
+        max-width: 100%;
+    }
+
+    .resume-first-section-profile-box,
+    .resume-first-section-contact,
+    .resume-second-section-education-skills-boxes,
+    .resume-second-section-workHistory-languages-boxes {
+        padding: 16px;
+        margin-top: 15px;
+    }
+
+    .resume-second-section-education p {
+        font-size: 16px;
+    }
+
+
+}
+
+@media only screen and (max-width: 375px) {
+    .resume-first-section-profile-box,
+    .resume-first-section-contact,
+    .resume-second-section-education-skills-boxes,
+    .resume-second-section-workHistory-languages-boxes {
+        margin-top: 0;
+    }
+
+    .resume-first-section-contact h1 {
+        font-size: 21px;
+        width: 30px;
+    }
+
+    .resume-first-section-profile-box h2,
+    .resume-second-section-education-skills-boxes h2,
+    .resume-second-section-workHistory-languages-boxes h2 {
+        font-size: 18px;
+    }
+
+    .resume-second-section-education {
+        margin-top: 15px;
+    }
+
+    .resume-second-section-education h3,
+    .resume-second-section-workHistory-languages-boxes div h3,
+    .resume-second-section-education p{
+        font-size: 14px;
+    }
+
+    .resume-second-section-education span,
+    .resume-second-section-workHistory-languages-boxes div div span {
+        font-size: 12px;
+    }
+    .resume-second-section-workHistory-languages-boxes div ul li ul {
+        padding: 0 0 0 20px;
+    }
+}
+
+
+
+
+
